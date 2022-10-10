@@ -1,0 +1,73 @@
+* { /*Configuração Geral*/
+    font-family: Arial, Helvetica, sans-serif; /*Fonte utilizada*/
+    margin:0px; /*Margem*/
+    padding:0px; /*Espaçamento*/
+}
+
+body, html { /*Configuração do html como um todo e do body*/
+    background-color: lightgray; /*Cor de fundo*/
+}
+
+header { /*Configuração do header*/
+    background-color: gray; /*Cor de fundo*/
+}
+
+header > h1 { /*Configuração do H1 dentro do header*/
+    padding: 10px; /*Espaçamento*/
+    text-align: center; /*Alinhamento de texto*/
+}
+
+span#burguer { /*começamos o comando com span (para informar que é sobre o comando do ícone) e depois colocamos o id que incluímos no HTML (#burguer)*/
+    background-color: rgb(58, 58, 58); /*Cor de fundo*/
+    display:block; /*Comando para que a região do ícone ocupe a totalidade da página*/
+    text-align: center; /*Alinhamento centralizado*/
+    color:white; /*Cor das listras*/
+    padding:10px; /*Espaçamento de todos os lados*/
+    cursor:pointer; /*Para que o cursor, quando posicionado no menu, altere a imagem de seta para mão*/
+}
+
+span#burguer:hover {
+    background-color: white; /*Para que o cursor, quando posicionado no menu, altere a cor de fundo para branco*/
+    color:black; /*Para que o cursor, quando posicionado no menu, altere a cor das letras para preto*/
+}
+
+menu { /*Configuração do menu*/
+    display: none; /*Para que o menu não fique visível [apenas o menu "hamburguinho" ficará visível]*/ 
+}
+
+menu > ul { /*Configuração da lista ul do menu*/
+    list-style-type: none; /*Retirada das marcações da lista (os pontos)*/
+}
+
+menu > ul > li > a { /*Configuração dos itens da lista*/
+    display: block; /*bloqueio dos itens a da lista*/
+    padding:10px; /*Espaçamento entre os itens*/
+    text-decoration: none; /*Retirada da decoração de underline, natural em links*/
+    background-color: rgb(90, 90, 90); /*Cor de fundo*/
+    color: white; /*Cor das letras*/
+    text-align: center; /*Alinhamento do texto*/
+    border-top:1px solid white; /*Contorno das caixas da lista*/
+}
+
+menu > ul > li > a:hover { /*Configuração para o momento em que o usuário posicionar o mouse em cima do item da lista*/
+    background-color: gray; /*Alteração da cor de fundo*/
+}
+
+main { /*Configuração do corpo que envolve o texto em main*/
+    width: 90vw; /*90% da largura da tela (ou 90vw do width)*/
+    background-color: white; /*Cor de fundo*/
+    margin: auto; /*Configuração para que as margens se adaptem ao tamanho da tela (automaticamente)*/
+    padding:10px; /*Espaçamento do texto e da borda da caixa de texto*/
+    border-radius: 10px; /*Arredondamento*/
+    margin-top:10px; /*Margem superior*/
+}
+
+article > h2 { /*Configuração do título 2 dentro de article*/
+    padding-bottom: 20px; /*Espaçamento inferior*/
+}
+
+article > p { /*Configuração dos parágrafos dentro de article*/
+    text-align: justify; /*Alinhamento justificado*/
+    margin-bottom: 20px; /*Margem inferior*/
+    text-indent: 20px; /*Recuo de parágrafos*/
+}

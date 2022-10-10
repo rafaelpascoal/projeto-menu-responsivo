@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Menu Responsivo</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" /> <!--link retirado do site https://developers.google.com/fonts/docs/material_symbols em fonte estática com google fonts-->
+
+    <link rel="stylesheet" href="estilos/style.css">
+
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span> 
+        
+        <!--
+            
+        Span é um comando retirado do site https://developers.google.com/fonts/docs/material_symbols em como usar ícones em html (lembrando que alterei o nome do comando [palavra menu], pois era o ícone que eu precisava no projeto); 
+            
+        Além disso, adicionei um id para configurá-lo no CSS (id="burguer");
+        
+        Para que possamos criar uma responsividade no "hamburguinho, precisamos criar um comando em JavaScript [onclick="clickMenu()"], além de incluír um código JavaScript no final do código HTML, após main e incluir um id em menu (abaixo) com o nome "itens".
+        
+        -->
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+
+    <main>
+
+        <article>
+            <h2>Testando Media Queries</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum ut incidunt qui maiores numquam blanditiis vel minus harum vero autem nihil excepturi officia impedit repellat quos animi facere, debitis fugiat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, est nesciunt aperiam voluptas dolorum voluptatibus velit numquam deserunt at ab molestiae deleniti eum veritatis impedit laborum. Esse doloremque expedita quod! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sapiente consectetur, perspiciatis voluptas fugiat facere in perferendis! Non animi esse cumque soluta, labore quidem iure impedit officia ipsam eum hic.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, dolores pariatur. Possimus laudantium dolore natus officiis! Nulla a, minima quae sit hic voluptate enim similique illo fugiat non et voluptatum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident iusto saepe nemo, placeat cupiditate illum debitis libero excepturi commodi dicta doloribus, quasi nesciunt omnis assumenda quidem consequatur animi natus sit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. A ipsum error nobis totam, pariatur sunt? Omnis, doloribus incidunt vel nam sapiente voluptatibus nulla adipisci quisquam repudiandae, eaque ab molestiae laborum!</p>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, porro quisquam consectetur eius, cupiditate laborum cumque sequi cum ad assumenda dolor. Nostrum saepe tempora ullam labore dolor vero suscipit minus! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus delectus vero minima porro fuga quidem, ratione facere consectetur dolore eius dolorem? Ducimus officiis eos blanditiis animi laboriosam fuga quod excepturi.</p>
+        </article>
+
+
+    </main>
+    <script>
+        function clickMenu() { 
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+
+        }
+    </script>
+</body>
+</html>
