@@ -18,17 +18,18 @@ header > h1 { /*Configuração do H1 dentro do header*/
 }
 
 span#burguer { /*começamos o comando com span (para informar que é sobre o comando do ícone) e depois colocamos o id que incluímos no HTML (#burguer)*/
-    background-color: rgb(58, 58, 58); /*Cor de fundo*/
-    display:block; /*Comando para que a região do ícone ocupe a totalidade da página*/
-    text-align: center; /*Alinhamento centralizado*/
+    background-color: gray; /*Cor de fundo*/
+    display:auto; /*Comando para que a região do ícone ocupe a totalidade da página*/
+    text-align: left; /*Alinhamento centralizado*/
     color:white; /*Cor das listras*/
     padding:10px; /*Espaçamento de todos os lados*/
     cursor:pointer; /*Para que o cursor, quando posicionado no menu, altere a imagem de seta para mão*/
 }
 
 span#burguer:hover {
-    background-color: white; /*Para que o cursor, quando posicionado no menu, altere a cor de fundo para branco*/
+    background-color: rgb(148, 144, 144); /*Para que o cursor, quando posicionado no menu, altere a cor de fundo para branco*/
     color:black; /*Para que o cursor, quando posicionado no menu, altere a cor das letras para preto*/
+    border-radius: 10px;
 }
 
 menu { /*Configuração do menu*/
