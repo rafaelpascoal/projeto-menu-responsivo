@@ -1,0 +1,32 @@
+
+/*TIPICAL DEVICE BREAKPOINTS*/
+
+/*
+
+Telas pequenas - até 600px;
+celular - de 600px até 768px;
+Tablet - de 768px até 992px;
+Desktop - de 992px até 1200px;
+Grandes telas - acima de 1200px;
+
+*/
+
+/*Lembrando que, para o projeto de menu responsivo (menu hamburguinho), iniciamos a configuração do menu com display aberto (block) a partir de telas com 768px. Abaixo disso, será visto o menu hamburguinho (retraído). */
+
+@media screen and (min-width:768px) { /*Telas a partir de tablets*/
+    span#burguer { /*Configuração do menu "hamburguinho"*/
+        display: none; /*Nesse caso (telas maiores), o menu hamburguinho não aparecerá (display none)*/
+    }
+
+    menu {
+        display:block; /*Nesse caso (telas maiores), o menu aparecerá por completo (display block)*/
+    }
+
+    menu > ul > li {
+        display: inline-block;
+    }
+
+    main {
+        width:768px;
+    }
+}
